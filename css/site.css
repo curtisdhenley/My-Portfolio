@@ -1,11 +1,11 @@
 /* CSS Variables */
 :root {
-    --ch-primary-color: #D92525;
-    --ch-secondary-color: #737171;
-    --ch-highlight-color: rgb(250, 225, 120);
+    --ch-primary-color: #ff4057;
+    --ch-secondary-color: #dcdcdc;
+    --ch-highlight-color: rgb(11, 180, 143);
 
     --ch-nav-toggler-color: var(--ch-highlight-color);
-    --ch-nav-toggler-glow: rgba(250, 225, 120, 0.55);
+    --ch-nav-toggler-glow: rgba(11, 180, 143, 0.55);
 
     --ch-dark-color: #212121;
     --ch-light-color: #F2F2F2;
@@ -44,7 +44,7 @@ body {
 
 .content {
     flex: 1 0 auto;
-    margin-top: 1rem;
+    /* margin-top: 1rem; */
 }
 
 footer {
@@ -71,6 +71,57 @@ footer {
     font-size: 1.5rem;
 }
 
+/* element overrides */
+h6,
+.h6,
+h5,
+.h5,
+h4,
+.h4,
+h3,
+.h3,
+h2,
+.h2,
+h1,
+.h1 {
+    font-family: var(--ch-heading-font);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    color: var(--ch-title-color);
+}
+
+.btn-primary {
+    color: var(--ch-light-color) !important;
+    background-color: var(--ch-highlight-color) !important;
+    border-color: var(--ch-highlight-color);
+}
+
+.btn-primary:hover {
+    filter: brightness(1.1) !important;
+    border-color: var(--ch-dark-color);
+    border-width: 2px;
+    color: var(--ch-dark-color);
+}
+
+.btn-primary:active,
+.btn-primary:visited,
+.btn-primary:focus {
+    filter: brightness(1.1) !important;
+    border-color: var(--ch-dark-color);
+}
+
+.link-style {
+    color: var(--ch-highlight-color);
+    text-decoration: none;
+}
+
+.link-style:hover {
+    color: var(--ch-highlight-color);
+    filter: saturate(2);
+    text-decoration: underline;
+}
+
 /* footer styles */
 .footer-main {
     background-color: var(--ch-dark-color);
@@ -89,5 +140,205 @@ footer {
 }
 
 .social-icons {
-    font-size: 2 rem;
+    font-size: 1.8rem;
+}
+
+/* main header */
+.main-header {
+    height: 200px;
+    background-image: url(/img/CF-imgs/img/DevPortFolioBG_576.png);
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-color: var(--ch-light-color);
+}
+
+/* .main-header-cover {
+    min-height: 200px;
+    background-image: url(/img/CF-imgs/img/cityBG_2560.png);
+    background-repeat: no-repeat;
+    background-position: top left;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background-size: cover;
+}
+
+.main-header-cover>.main-header-content {
+    backdrop-filter: blur(1px) hue-rotate(0deg) brightness(90%) contrast(150%) saturate(150%);
+    -webkit-backdrop-filter: blur(1px) hue-rotate(0deg) brightness(90%) contrast(150%) saturate(150%);
+}
+
+@supports not (backdrop-filter: blur(3px)) {
+    .main-header-cover > .main-header-content {
+        background-color: rgba(0, 37, 46, 0.6);
+    }
+} */
+
+.main-header-wrapper {
+    padding-left: 1rem;
+}
+
+.main-title {
+    font-family: var(--ch-title-font);
+    font-size: 2.5rem;
+    line-height: 2rem;
+    color: var(--ch-dark-color);
+}
+
+.main-logo {
+    height: 1.2em;
+}
+
+.subtitle {
+    font-family: var(--ch-subtitle-font);
+    font-size: .6rem;
+    line-height: 1rem;
+    font-weight: 300;
+    color: var(--ch-dark-color);
+    letter-spacing: .09rem;
+}
+
+/* section styles */
+.profile-pic {
+    border-radius: 20px;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+}
+
+section {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.section-page {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.section-page:nth-child(even) {
+    background-color: var(--ch-light-color);
+}
+
+.section-page:nth-child(odd) {
+    background-color: var(--ch-secondary-color);
+}
+
+.devicons {
+    font-size: 4rem;
+}
+
+/* -------------------------------------- MEDIA QUERIES -------------------------------------- */
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    .hero-img {
+        height: 250px;
+    }
+
+    /* main header */
+    .main-header {
+        height: 200px;
+        background-image: url(/img/CF-imgs/img/DevPortFolioBG_767.png);
+    }
+
+    .main-title {
+        font-size: 2.5rem;
+        line-height: 2rem;
+    }
+
+    .subtitle {
+        font-size: .6rem;
+        line-height: 1rem;
+        letter-spacing: .09rem;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .hero-img {
+        height: 350px;
+    }
+
+    /* main header */
+    .main-header {
+        height: 300px;
+        background-image: url(/img/CF-imgs/img/DevPortFolioBG_992.png);
+    }
+
+    .main-title {
+        font-size: 2.5rem;
+        line-height: 2rem;
+    }
+
+    .subtitle {
+        font-size: .6rem;
+        line-height: 1rem;
+        letter-spacing: .09rem;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .hero-img {
+        height: 450px;
+    }
+
+    /* main header */
+    .main-header {
+        height: 400px;
+        background-image: url(/img/CF-imgs/img/DevPortFolioBG_1200.png);
+    }
+
+    .main-title {
+        font-size: 2.5rem;
+        line-height: 2rem;
+    }
+
+    .subtitle {
+        font-size: .6rem;
+        line-height: 1rem;
+        letter-spacing: .09rem;
+    }
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+    /* main header */
+    .main-header {
+        height: 500px;
+        background-image: url(/img/CF-imgs/img/DevPortFolioBG_2560.png);
+    }
+
+    .main-title {
+        font-size: 2.5rem;
+        line-height: 2rem;
+    }
+
+    .subtitle {
+        font-size: .6rem;
+        line-height: 1rem;
+        letter-spacing: .09rem;
+    }
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+
+    /* main header */
+    .main-header {
+        height: 500px;
+        background-image: url(/img/CF-imgs/img/DevPortFolioBG_2560.png);
+    }
+
+    .main-title {
+        font-size: 2.5rem;
+        line-height: 2rem;
+    }
+
+    .subtitle {
+        font-size: .6rem;
+        line-height: 1rem;
+        letter-spacing: .09rem;
+    }
 }

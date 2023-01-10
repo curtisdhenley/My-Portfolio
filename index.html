@@ -36,7 +36,8 @@
     <nav class="navbar navbar-expand-lg navbar-dark" id="main-nav">
         <div class="container-xxl">
             <a class="navbar-brand" href="#">
-                <img src="/img/Developer Brand Logo/png/logo-no-background.png" height="50px" alt="Curtis Henley logo">
+                <img src="/img/Developer Brand Logo/png/curtis-henley-low-resolution-logo-color-on-transparent-background.png"
+                    height="50px" alt="Curtis Henley logo">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -48,50 +49,178 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active" aria-current="page" href="#Home">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
+                        <a class="nav-link" href="#About">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Skills</a>
+                        <a class="nav-link" href="#Skills">Skills</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Projects</a>
+                        <a class="nav-link" href="#Projects">Projects</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Challenges</a>
+                        <a class="nav-link" href="#Challenges">Challenges</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Blog</a>
+                        <a class="nav-link" href="#Blog">Blog</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link" href="#Contact">Contact</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <header></header>
+    <header class="container-xxl" id="home">
+        <div class="main-header">
+            <div class="main-header-content h-100 w-100 d-flex justify-content-start align-items-center">
+                <div class="main-header-wrapper">
+                    <div class="main-title">
+                        CURTIS
+                        <span><img src="/img/Developer Brand Logo/png/icon-black.png" alt="Curtis Henley logo icon"
+                                class="main-logo"></i></span>
+                    </div>
+                    <div class="main-title">
+                        HENLEY
+                    </div>
+                    <div class="subtitle">
+                        SOFTWARE DEV
+                    </div>
+                    <a href="#" class="btn btn-primary mt-3">CONTACT ME</a>
+                </div>
+            </div>
+        </div>
+    </header>
 
-    <main class="content"></main>
+    <main class="content container-xxl">
+        <section id="About" class="section-page">
+            <h1>About Me</h1>
+            <div class="row">
+                <div class="col-12 col-lg-4">
+                    <picture>
+                        <source srcset="/img/hero-imgs/hero-img-cropped.jpg" media="(min-width: 992px)" />
+                        <source srcset="/img/hero-imgs/hero-img-cropped.jpg" media="(min-width: 768px)" />
+                        <source srcset="/img/hero-imgs/hero-img-cropped.jpg" media="(min-width: 576px)" />
+                        <img src="/img/hero-imgs/hero-img-cropped.jpg" alt="hero image" height="550px"
+                            class="hero-img img-fluid profile-pic">
+                    </picture>
+                </div>
+                <div class="col-12 col-lg-8 mt-3 mt-lg-0">
+                    <h2>I'm Curtis Henley, a Software Developer!</h2>
+                    <p>
+                        My prior experience working on and leading teams provide me with the ability to adapt to new
+                        environments and to start contributing to projects quickly. I love being faced with complex
+                        problems, as it gives me the opportunity to push myself to better develop my skills in order to
+                        solve the issue. Be It through pair programming or using my black belt in Google-Fu. Writing
+                        code is a great stress reliever and anxiety reducer for me. Coding keeps my mind focused and
+                        working on the task at handily love the problem-solving aspect that comes with this field.
+                        Sometimes I could code for hours at a time once I know what it is I want/need to build. The
+                        thrill of figuring out the puzzle is gratifying for me. It makes working on new tasks that help
+                        me build up my skills as a Software developer an absolute joy. I'm excited to see where my
+                        career as a Software Developer takes me.
+                    </p>
+                    <div class="row g-5">
+                        <div class="col-12 col-lg-6">
+                            <span>Name: </span>
+                            <span>Curtis Henley</span>
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <span>Email: </span>
+                            <span><a href="mailto:henleydcurtis@gmail.com"
+                                    class="link-style">henleydcurtis@gmail.com</a></span>
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <span>From: </span>
+                            <span>Florida, US</span>
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <a href="#" class="btn btn-primary btn-xl">Download My Resume!</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="Skills" class="section-page">
+            <h1>What I use</h1>
+            <p>
+                I use my creative problem solving abilities to build full-stack web applications. My tools are C#,
+                PostgreSQL, ASP.NET, JavaScript, Bootstrap, HTML and CSS. I have listed my key skills that I will bring
+                to your project.
+            </p>
+            <div class="row g-3 row-cols-1 row-cols-md-2 rol-cols-lg-3 p-2">
+                <div class="col">
+                    <i class="devicon-csharp-plain colored devicons"></i>
+                    <p>I use C# on a daily basis to build websites and web apps. You can see examples of my work where I
+                        implement C# in my <a href="#Projects" class="link-style">projects sections</a></p>
+                </div>
+                <div class="col">
+                    <i class="devicon-dotnetcore-plain colore devicons"></i>
+                    <p>
+                        I use proven design patterns and frameworks to build websites. ASP.NET Core Web and MCV fits the
+                        bill for most projects. Check out my projects to see examples!
+                    </p>
+                </div>
+                <div class="col">
+                    <i class="devicon-javascript-plain colored devicons"></i>
+                    <p>
+                        I use vanilla JS and built these <a href="#Challenges" class="link-style">JS Challenges</a> to showcase my skills.
+                    </p>
+                </div>
+                <div class="col">
+                    <i class="devicon-html5-plain colored devicons"></i>
+                    <i class="devicon-css3-plain colored devicons"></i>
+                    <i class="devicon-bootstrap-plain colored devicons"></i>
+                    <p>
+                        I use HTML, CSS, and Bootstrap to build beautiful and responsive websites. Bootstrap is a
+                        powerful tool that makes working with the front end a breeze.
+                    </p>
+                </div>
+                <div class="col">
+                    <i class="devicon-git-plain colored devicons"></i>
+                    <i class="devicon-github-original colored devicons"></i>
+                    <p>
+                        I use Git and Github for all of my projects. Git a great source control option that helps me
+                        implement CI/CD with my publishing's.
+                    </p>
+                </div>
+                <div class="col">
+                    <i class="devicon-postgresql-plain colored devicons"></i>
+                    <p>
+                        My projects all utilize a database. I have used Postgres on all of them. I can write SQL in any
+                        DB platform.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section id="Projects" class="section-page"></section>
+        <section id="Challenges" class="section-page"></section>
+        <section id="Blog" class="section-page"></section>
+        <section id="Contact" class="section-page"></section>
+    </main>
 
     <footer class="container-fluid mt-5">
         <div class="row align-items-center footer-main">
             <div class="col container">
                 <div class="row align-items-center gy-2">
                     <div class="col d-flex justify-content-center justify-content-md-start order-md-first order-last">
-                        Built by -  Curtis Henley &COPY; 2023
+                        Built by - Curtis Henley &COPY; 2023
                     </div>
                     <div class="col d-flex justify-content-center">
-                        <img src="/img/Developer Brand Logo/png/logo-no-background.png" height="50px" alt="Curtis Henley logo">
+                        <img src="/img/Developer Brand Logo/png/curtis-henley-low-resolution-logo-white-on-transparent-background.png"
+                            height="50px" alt="Curtis Henley logo">
                     </div>
                     <div class="col-12 col-md d-flex justify-content-center justify-content-md-end">
-                        <a target="_blank" href="https://twitter.com/curtis_henley92" class="social-icons"><i class="bi bi-twitter p-2"></i></a>
-                        <a target="_blank" href="https://www.instagram.com/curtisdhenley/?hl=en" class="social-icons"><i class="bi bi-instagram p-2"></i></a>
-                        <a target="_blank" href="mailto:henleydcurtis@gmail.com" class="social-icons"><i class="bi bi-envelope-at p-2"></i></a>
-                        <a target="_blank" href="https://www.linkedin.com/in/curtisdhenley/" class="social-icons"><i class="bi bi-linkedin p-2"></i></a>
+                        <a target="_blank" href="https://twitter.com/curtis_henley92" class="social-icons"><i
+                                class="bi bi-twitter p-2"></i></a>
+                        <a target="_blank" href="https://www.instagram.com/curtisdhenley/?hl=en" class="social-icons"><i
+                                class="bi bi-instagram p-2"></i></a>
+                        <a target="_blank" href="mailto:henleydcurtis@gmail.com" class="social-icons"><i
+                                class="bi bi-envelope-at p-2"></i></a>
+                        <a target="_blank" href="https://www.linkedin.com/in/curtisdhenley/" class="social-icons"><i
+                                class="bi bi-linkedin p-2"></i></a>
                     </div>
                 </div>
             </div>
