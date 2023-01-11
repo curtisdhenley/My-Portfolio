@@ -1,2 +1,2 @@
 # CF-portfolio-site
-***Live Link: curtishenley.dev***
+***Live Link: http://curtishenley.dev/***
