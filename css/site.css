@@ -243,6 +243,26 @@ section {
     font-size: 4rem;
 }
 
+.section-cta {
+    background-color: var(--ch-dark-color);
+    color: var(--ch-light-color);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 1rem;
+    text-align: center;
+    line-height: 1.2rem;
+}
+
+.cta-arrow {
+    color: var(--ch-highlight-color);
+    font-size: 2rem;
+}
+
+.cta-arrow:hover {
+    color: var(--ch-highlight-color);
+    filter: brightness(1.2);
+}
+
 /* -------------------------------------- MEDIA QUERIES -------------------------------------- */
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
@@ -283,6 +303,15 @@ section {
         font-size: .6rem;
         line-height: 1rem;
         letter-spacing: .09rem;
+    }
+
+    .section-cta {
+        font-size: 1.5rem;
+        line-height: 1.7rem;
+    }
+
+    .cta-arrow {
+        font-size: 2.5rem;
     }
 }
 
@@ -325,6 +354,15 @@ section {
         font-size: 1rem;
         line-height: 2rem;
         letter-spacing: .09rem;
+    }
+
+    .section-cta {
+        font-size: 2.5rem;
+        line-height: 2.7rem;
+    }
+
+    .cta-arrow {
+        font-size: 4rem;
     }
 }
 
