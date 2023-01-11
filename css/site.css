@@ -239,6 +239,14 @@ section {
     background-color: var(--ch-secondary-color);
 }
 
+.section-page:nth-last-child(2) {
+    background-color: var(--ch-secondary-color);
+}
+
+.section-page:last-child {
+    background-color: var(--ch-light-color);
+}
+
 .devicons {
     font-size: 4rem;
 }
