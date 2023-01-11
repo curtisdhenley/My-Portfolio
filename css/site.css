@@ -21,6 +21,21 @@
     --ch-line-height: 1.5rem;
 
     --ch-title-color: var(--ch-dark-color);
+
+    --ch-body-color: #212529;
+    --ch-body-bg: #fff;
+    --ch-primary-rgb: 26, 188, 156;
+    --ch-secondary-rgb: 44, 62, 80;
+    --ch-success-rgb: 25, 135, 84;
+    --ch-info-rgb: 13, 202, 240;
+    --ch-warning-rgb: 255, 193, 7;
+    --ch-danger-rgb: 220, 53, 69;
+    --ch-light-rgb: 248, 249, 250;
+    --ch-dark-rgb: 33, 37, 41;
+    --ch-white-rgb: 255, 255, 255;
+    --ch-black-rgb: 0, 0, 0;
+    --ch-body-color-rgb: 33, 37, 41;
+    --ch-body-bg-rgb: 255, 255, 255;
 }
 
 
