@@ -43,6 +43,13 @@
 html,
 body {
     height: 100%;
+    overflow-y: auto;
+}
+
+.navbar .active {
+    background-color: var(--ch-highlight-color);
+    border-radius: 10px;
+    filter: brightness(1.1);
 }
 
 body {
@@ -282,6 +289,13 @@ section {
     filter: brightness(1.2);
 }
 
+.line-clamp {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+}
+
 /* -------------------------------------- MEDIA QUERIES -------------------------------------- */
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
@@ -325,12 +339,12 @@ section {
     }
 
     .section-cta {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         line-height: 1.7rem;
     }
 
     .cta-arrow {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 }
 
@@ -376,12 +390,12 @@ section {
     }
 
     .section-cta {
-        font-size: 2.5rem;
+        font-size: 1.6rem;
         line-height: 2.7rem;
     }
 
     .cta-arrow {
-        font-size: 4rem;
+        font-size: 3.5rem;
     }
 }
 
