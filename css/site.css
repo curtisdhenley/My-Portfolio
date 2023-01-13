@@ -50,6 +50,8 @@ body {
     background-color: var(--ch-highlight-color);
     border-radius: 10px;
     filter: brightness(1.1);
+    overflow: hidden;
+    transition: none !important;
 }
 
 body {
