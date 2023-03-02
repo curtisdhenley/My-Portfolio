@@ -52,7 +52,8 @@ function displayBlogs(blogPosts, baseUrl) {
         blogAbstract.textContent = blogPost.abstract;
 
         let buttonLink = articleCard.querySelector('[data-blog="buttonLink"]'); 
-        buttonLink.href = `${baseUrl}/Content/${blogPost.slug}`;
+        buttonLink.href = `${baseUrl}Content/${blogPost.slug}`;
+        buttonLink.setAttribute('target', '_blank');
 
         let updateText = articleCard.querySelector('[data-blog="updated"]');
         
