@@ -1,5 +1,5 @@
 function fetchBlogData() {
-    const baseUrl = "https://techture-production.up.railway.app";
+    const baseUrl = "https://techture-production.up.railway.app/";
 
     fetch(`${baseUrl}api/BlogPosts?num=4`)
         .then((response) => response.json())
@@ -20,12 +20,13 @@ function displayBlogs(blogPosts, baseUrl) {
 
         // set blog image link
         let imageDiv = articleCard.querySelector('[data-blog="imageLink"]');
-        imageDiv.href = `${baseUrl}/Content/${blogPost.slug}`;
+        imageDiv.href = `${baseUrl}Content/${blogPost.slug}`;
 
         // create image element
         let blogImage = document.createElement('img');
         blogImage.classList.add('blog-image');
         blogImage.setAttribute('src', `data:${blogPost.imageType};base64,${blogPost.imageData}`);
+        blogImage.setAttribute('target', '_blank');
 
         if (blogPost.imageData) {
             blogImage.setAttribute('src', `data:${blogPost.imageType};base64,${blogPost.imageData}`);
