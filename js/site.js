@@ -1,5 +1,5 @@
 function fetchBlogData() {
-    const baseUrl = "https://techture-production.up.railway.app/";
+    const baseUrl = "https://techture-production.up.railway.app";
 
     fetch(`${baseUrl}api/BlogPosts?num=4`)
         .then((response) => response.json())
