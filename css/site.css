@@ -124,7 +124,7 @@ h1,
 .btn-primary:hover {
     filter: brightness(1.1) !important;
     border-color: var(--ch-dark-color);
-    border-width: 2px;
+    /* border-width: 2px; */
     color: var(--ch-dark-color);
 }
 
